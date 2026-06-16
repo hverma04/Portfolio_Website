@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hari Verma — Portfolio</title>
+  <meta name="description" content="Hari Verma — Finance & MIS student at UMass Lowell, founder, quantitative researcher, and rugby captain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+
+  <style>
+    /* Home-only: multi-color gradient blob */
+    .hero-blob-home {
+      position: absolute;
+      width: clamp(400px, 80vw, 900px);
+      height: clamp(400px, 80vw, 900px);
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 40%,
+        rgba(200,16,46,0.10) 0%,
+        rgba(45,156,255,0.08) 20%,
+        rgba(255,176,0,0.08) 38%,
+        rgba(212,175,55,0.07) 52%,
+        rgba(43,168,154,0.07) 65%,
+        rgba(139,126,232,0.06) 80%,
+        transparent 100%
+      );
+      top: -25%;
+      right: -20%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(50px);
+    }
+
+    .profile-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: clamp(100px, 18vw, 150px);
+      height: clamp(100px, 18vw, 150px);
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .profile-text {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .connect-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .connect-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      padding: 0.4rem 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: color var(--transition-fast), border-color var(--transition-fast);
+    }
+
+    .connect-link:hover {
+      color: var(--accent);
+      border-color: var(--accent-border);
+      opacity: 1;
+    }
+
+    .page-index {
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+
+    .page-index-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+      gap: 0.75rem;
+    }
+
+    .page-card {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      transition: border-color var(--transition-med), transform var(--transition-fast);
+    }
+
+    .page-card:hover {
+      border-color: var(--card-accent-border);
+      transform: translateY(-2px);
+      opacity: 1;
+    }
+
+    .page-card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .page-card-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .page-card-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      font-family: var(--font-display);
+    }
+
+    .page-card-role {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body data-theme="home">
+
+  <!-- ── Navigation ── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Hari Verma home">HV<span>.</span></a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" aria-current="page"><span class="nav-dot dot-home" aria-hidden="true"></span>Home</a></li>
+        <li><a href="rugby.html"><span class="nav-dot dot-rugby" aria-hidden="true"></span>Rugby</a></li>
+        <li><a href="ccr.html"><span class="nav-dot dot-ccr" aria-hidden="true"></span>CCR</a></li>
+        <li><a href="research.html"><span class="nav-dot dot-research" aria-hidden="true"></span>Research</a></li>
+        <li><a href="millcity.html"><span class="nav-dot dot-millcity" aria-hidden="true"></span>Mill City</a></li>
+        <li><a href="bloomberg.html"><span class="nav-dot dot-bloomberg" aria-hidden="true"></span>Bloomberg</a></li>
+        <li><a href="kern.html"><span class="nav-dot dot-kern" aria-hidden="true"></span>KERN</a></li>
+        <li><a href="logixhealth.html"><span class="nav-dot dot-logixhealth" aria-hidden="true"></span>LogixHealth</a></li>
+        <li><a href="education.html"><span class="nav-dot dot-education" aria-hidden="true"></span>Education</a></li>
+        <li><a href="skills.html"><span class="nav-dot dot-skills" aria-hidden="true"></span>Skills</a></li>
+        <li><a href="contact.html"><span class="nav-dot dot-contact" aria-hidden="true"></span>Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open navigation menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <ul role="list">
+      <li><a href="index.html" aria-current="page"><span class="nav-dot dot-home" aria-hidden="true"></span>Home</a></li>
+      <li><a href="rugby.html"><span class="nav-dot dot-rugby" aria-hidden="true"></span>Rugby</a></li>
+      <li><a href="ccr.html"><span class="nav-dot dot-ccr" aria-hidden="true"></span>CCR</a></li>
+      <li><a href="research.html"><span class="nav-dot dot-research" aria-hidden="true"></span>Research</a></li>
+      <li><a href="millcity.html"><span class="nav-dot dot-millcity" aria-hidden="true"></span>Mill City</a></li>
+      <li><a href="bloomberg.html"><span class="nav-dot dot-bloomberg" aria-hidden="true"></span>Bloomberg</a></li>
+      <li><a href="kern.html"><span class="nav-dot dot-kern" aria-hidden="true"></span>KERN</a></li>
+      <li><a href="logixhealth.html"><span class="nav-dot dot-logixhealth" aria-hidden="true"></span>LogixHealth</a></li>
+      <li><a href="education.html"><span class="nav-dot dot-education" aria-hidden="true"></span>Education</a></li>
+      <li><a href="skills.html"><span class="nav-dot dot-skills" aria-hidden="true"></span>Skills</a></li>
+      <li><a href="contact.html"><span class="nav-dot dot-contact" aria-hidden="true"></span>Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ── Hero ── -->
+    <header class="hero">
+      <div class="hero-blob-home" aria-hidden="true"></div>
+      <div class="page-wrapper hero-content">
+
+        <div class="profile-wrap animate-in">
+          <img
+            src="assets/images/HV_Headshot.jpeg"
+            alt="Hari Verma"
+            class="profile-img"
+            width="150"
+            height="150"
+          />
+          <div class="profile-text">
+            <span class="hero-label">Finance &amp; MIS · UMass Lowell · Westford, MA</span>
+            <h1 class="hero-title">Hari<br /><span class="accent">Verma.</span></h1>
+            <p class="hero-thesis">
+              I build and test quantitative models, lead teams from the front, and find the edge
+              where finance, data, and competitive drive converge.
+            </p>
+
+            <div class="connect-row">
+              <a href="mailto:harivermaofficial@gmail.com" class="connect-link">
+                ✉ harivermaofficial@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/hariverma" class="connect-link" target="_blank" rel="noopener noreferrer">
+                in LinkedIn
+              </a>
+              <a href="contact.html" class="connect-link">
+                → Get in touch
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ── About panels ── -->
+    <section class="section" aria-labelledby="about-heading">
+      <div class="page-wrapper">
+
+        <div class="panels-grid">
+          <div class="glass-panel animate-in">
+            <span class="panel-label">Background</span>
+            <h2 class="panel-title" id="about-heading">Finance &amp; MIS, Manning School of Business</h2>
+            <p class="panel-body">
+              I'm a junior at UMass Lowell's Honors College pursuing a B.S. in Finance and
+              Management Information Systems, with a minor in Quantitative Economics (expected
+              May 2027). My coursework sits at the intersection of markets, data, and systems —
+              from Financial Derivatives and Corporate Finance to Application Development in Python.
+            </p>
+          </div>
+
+          <div class="glass-panel animate-in">
+            <span class="panel-label">What ties it together</span>
+            <h2 class="panel-title">Models, markets, and momentum</h2>
+            <p class="panel-body">
+              Whether I'm running Monte Carlo simulations for KERN Financial, leading UML Rugby onto
+              the pitch, or building recruiting pipelines for CCR, the through-line is the same:
+              rigorous preparation, a quantitative lens, and a bias toward doing things that haven't
+              been done at UMass Lowell before.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Page index / site map ── -->
+    <section class="section" aria-labelledby="case-files-heading">
+      <div class="page-wrapper">
+        <h2 id="case-files-heading" class="animate-in" style="margin-bottom: 1.25rem;">
+          Case Files <span style="color: var(--text-muted); font-weight: 400;">—</span>
+          <span style="color: var(--text-secondary); font-size: 0.9em; font-weight: 400;"> explore each role</span>
+        </h2>
+
+        <div class="page-index-grid animate-in">
+
+          <a href="rugby.html" class="page-card" style="--card-accent-border: rgba(200,16,46,0.35);">
+            <span class="page-card-dot dot-rugby" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">Rugby</span>
+              <span class="page-card-role">Captain · UML</span>
+            </div>
+          </a>
+
+          <a href="kern.html" class="page-card" style="--card-accent-border: rgba(212,175,55,0.35);">
+            <span class="page-card-dot dot-kern" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">KERN Financial</span>
+              <span class="page-card-role">Co-Founder &amp; CEO</span>
+            </div>
+          </a>
+
+          <a href="ccr.html" class="page-card" style="--card-accent-border: rgba(39,174,116,0.35);">
+            <span class="page-card-dot dot-ccr" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">CCR</span>
+              <span class="page-card-role">Founder &amp; President</span>
+            </div>
+          </a>
+
+          <a href="research.html" class="page-card" style="--card-accent-border: rgba(45,156,255,0.35);">
+            <span class="page-card-dot dot-research" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">Research</span>
+              <span class="page-card-role">Quant Intern · UML</span>
+            </div>
+          </a>
+
+          <a href="bloomberg.html" class="page-card" style="--card-accent-border: rgba(255,176,0,0.35);">
+            <span class="page-card-dot dot-bloomberg" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">Bloomberg</span>
+              <span class="page-card-role">Markets Research Asst.</span>
+            </div>
+          </a>
+
+          <a href="millcity.html" class="page-card" style="--card-accent-border: rgba(143,163,177,0.35);">
+            <span class="page-card-dot dot-millcity" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">Mill City</span>
+              <span class="page-card-role">Investment Consultant</span>
+            </div>
+          </a>
+
+          <a href="logixhealth.html" class="page-card" style="--card-accent-border: rgba(43,168,154,0.35);">
+            <span class="page-card-dot dot-logixhealth" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">LogixHealth</span>
+              <span class="page-card-role">Finance Intern</span>
+            </div>
+          </a>
+
+          <a href="education.html" class="page-card" style="--card-accent-border: rgba(200,150,94,0.35);">
+            <span class="page-card-dot dot-education" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">Education</span>
+              <span class="page-card-role">UMass Lowell · Honors</span>
+            </div>
+          </a>
+
+          <a href="skills.html" class="page-card" style="--card-accent-border: rgba(139,126,232,0.35);">
+            <span class="page-card-dot dot-skills" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">Skills</span>
+              <span class="page-card-role">Technical &amp; Certifications</span>
+            </div>
+          </a>
+
+          <a href="contact.html" class="page-card" style="--card-accent-border: rgba(232,236,241,0.25);">
+            <span class="page-card-dot dot-contact" aria-hidden="true"></span>
+            <div class="page-card-text">
+              <span class="page-card-name">Contact</span>
+              <span class="page-card-role">Get in touch</span>
+            </div>
+          </a>
+
+        </div>
+
+        <div style="margin-top: 2rem;" class="animate-in">
+          <a href="rugby.html" class="btn">Start with Rugby &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Hari Verma · Westford, MA</span>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="contact.html">Contact</a>
+        <a href="https://www.linkedin.com/in/hariverma" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

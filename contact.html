@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Hari Verma</title>
+  <meta name="description" content="Get in touch with Hari Verma — Finance & MIS student, founder, and quantitative researcher at UMass Lowell." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+      gap: 0.75rem;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      transition: border-color var(--transition-med), transform var(--transition-fast);
+    }
+
+    .contact-card:hover {
+      border-color: var(--accent-border);
+      transform: translateY(-2px);
+      opacity: 1;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .contact-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      min-width: 0;
+    }
+
+    .contact-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .contact-value {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .availability-note {
+      margin-top: 2.5rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .availability-note strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body data-theme="home">
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Hari Verma home">HV<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"><span class="nav-dot dot-home" aria-hidden="true"></span>Home</a></li>
+        <li><a href="rugby.html"><span class="nav-dot dot-rugby" aria-hidden="true"></span>Rugby</a></li>
+        <li><a href="ccr.html"><span class="nav-dot dot-ccr" aria-hidden="true"></span>CCR</a></li>
+        <li><a href="research.html"><span class="nav-dot dot-research" aria-hidden="true"></span>Research</a></li>
+        <li><a href="millcity.html"><span class="nav-dot dot-millcity" aria-hidden="true"></span>Mill City</a></li>
+        <li><a href="bloomberg.html"><span class="nav-dot dot-bloomberg" aria-hidden="true"></span>Bloomberg</a></li>
+        <li><a href="kern.html"><span class="nav-dot dot-kern" aria-hidden="true"></span>KERN</a></li>
+        <li><a href="logixhealth.html"><span class="nav-dot dot-logixhealth" aria-hidden="true"></span>LogixHealth</a></li>
+        <li><a href="education.html"><span class="nav-dot dot-education" aria-hidden="true"></span>Education</a></li>
+        <li><a href="skills.html"><span class="nav-dot dot-skills" aria-hidden="true"></span>Skills</a></li>
+        <li><a href="contact.html" aria-current="page"><span class="nav-dot dot-contact" aria-hidden="true"></span>Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open navigation menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <ul role="list">
+      <li><a href="index.html"><span class="nav-dot dot-home" aria-hidden="true"></span>Home</a></li>
+      <li><a href="rugby.html"><span class="nav-dot dot-rugby" aria-hidden="true"></span>Rugby</a></li>
+      <li><a href="ccr.html"><span class="nav-dot dot-ccr" aria-hidden="true"></span>CCR</a></li>
+      <li><a href="research.html"><span class="nav-dot dot-research" aria-hidden="true"></span>Research</a></li>
+      <li><a href="millcity.html"><span class="nav-dot dot-millcity" aria-hidden="true"></span>Mill City</a></li>
+      <li><a href="bloomberg.html"><span class="nav-dot dot-bloomberg" aria-hidden="true"></span>Bloomberg</a></li>
+      <li><a href="kern.html"><span class="nav-dot dot-kern" aria-hidden="true"></span>KERN</a></li>
+      <li><a href="logixhealth.html"><span class="nav-dot dot-logixhealth" aria-hidden="true"></span>LogixHealth</a></li>
+      <li><a href="education.html"><span class="nav-dot dot-education" aria-hidden="true"></span>Education</a></li>
+      <li><a href="skills.html"><span class="nav-dot dot-skills" aria-hidden="true"></span>Skills</a></li>
+      <li><a href="contact.html" aria-current="page"><span class="nav-dot dot-contact" aria-hidden="true"></span>Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="ticker-bar" role="banner" aria-label="Role ticker">
+    <div class="ticker-inner">
+      <span class="ticker-text">GET IN TOUCH — HARI VERMA — WESTFORD, MA</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <header class="hero">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <div class="page-wrapper hero-content">
+        <span class="hero-label animate-in">Always open to the right conversation</span>
+        <h1 class="hero-title animate-in">Get in<br /><span class="accent">Touch.</span></h1>
+        <p class="hero-thesis animate-in">
+          Internship inquiries, recruiting conversations, collaboration ideas, or just a good
+          finance question. Reach out — I read everything.
+        </p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="page-wrapper">
+        <h2 class="sr-only" id="contact-heading">Contact details</h2>
+
+        <div class="contact-grid animate-in">
+
+          <a href="mailto:harivermaofficial@gmail.com" class="contact-card">
+            <div class="contact-icon" aria-hidden="true">✉</div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">harivermaofficial@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/hariverma" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon" aria-hidden="true">in</div>
+            <div class="contact-detail">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/hariverma</span>
+            </div>
+          </a>
+
+          <div class="contact-card" style="cursor: default; pointer-events: none;">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <div class="contact-detail">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Westford, MA</span>
+            </div>
+          </div>
+
+          <div class="contact-card" style="cursor: default; pointer-events: none;">
+            <div class="contact-icon" aria-hidden="true">🎓</div>
+            <div class="contact-detail">
+              <span class="contact-label">University</span>
+              <span class="contact-value">UMass Lowell · Class of 2027</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="availability-note animate-in">
+          <strong>Status:</strong> &nbsp;Actively seeking Summer 2027 internship opportunities in investment banking,
+          private equity, asset management, or quantitative finance. &nbsp;|&nbsp; <strong>Response time:</strong> &nbsp;Within 24 hours.
+        </div>
+
+        <div style="margin-top: 2rem;" class="animate-in">
+          <a href="index.html" class="btn btn-ghost">&larr; Back to Home</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Hari Verma · Westford, MA</span>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="mailto:harivermaofficial@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/hariverma" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

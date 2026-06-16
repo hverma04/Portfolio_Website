@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills — Hari Verma</title>
+  <meta name="description" content="Hari Verma — Skills, certifications, and technical toolkit: financial modeling, Python, Bloomberg, Excel, SQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+
+  <style>
+    .skill-group {
+      margin-bottom: 0.25rem;
+    }
+
+    .skill-group-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+      display: block;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .skill-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.75rem;
+      border-radius: 7px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      transition: border-color var(--transition-fast), color var(--transition-fast);
+    }
+
+    .skill-chip:hover {
+      border-color: var(--accent-border);
+      color: var(--text-primary);
+    }
+
+    .cert-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding: 1rem 1.25rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: border-color var(--transition-fast);
+    }
+
+    .cert-card:hover {
+      border-color: var(--accent-border);
+    }
+
+    .cert-name {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      font-family: var(--font-body);
+    }
+
+    .cert-issuer {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .cert-year {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+    }
+
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .lang-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .lang-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      padding: 0.85rem 1.25rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      min-width: 130px;
+      flex: 1;
+    }
+
+    .lang-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+
+    .lang-level {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body data-theme="skills">
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Hari Verma home">HV<span>.</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html"><span class="nav-dot dot-home" aria-hidden="true"></span>Home</a></li>
+        <li><a href="rugby.html"><span class="nav-dot dot-rugby" aria-hidden="true"></span>Rugby</a></li>
+        <li><a href="ccr.html"><span class="nav-dot dot-ccr" aria-hidden="true"></span>CCR</a></li>
+        <li><a href="research.html"><span class="nav-dot dot-research" aria-hidden="true"></span>Research</a></li>
+        <li><a href="millcity.html"><span class="nav-dot dot-millcity" aria-hidden="true"></span>Mill City</a></li>
+        <li><a href="bloomberg.html"><span class="nav-dot dot-bloomberg" aria-hidden="true"></span>Bloomberg</a></li>
+        <li><a href="kern.html"><span class="nav-dot dot-kern" aria-hidden="true"></span>KERN</a></li>
+        <li><a href="logixhealth.html"><span class="nav-dot dot-logixhealth" aria-hidden="true"></span>LogixHealth</a></li>
+        <li><a href="education.html"><span class="nav-dot dot-education" aria-hidden="true"></span>Education</a></li>
+        <li><a href="skills.html" aria-current="page"><span class="nav-dot dot-skills" aria-hidden="true"></span>Skills</a></li>
+        <li><a href="contact.html"><span class="nav-dot dot-contact" aria-hidden="true"></span>Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open navigation menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation">
+    <ul role="list">
+      <li><a href="index.html"><span class="nav-dot dot-home" aria-hidden="true"></span>Home</a></li>
+      <li><a href="rugby.html"><span class="nav-dot dot-rugby" aria-hidden="true"></span>Rugby</a></li>
+      <li><a href="ccr.html"><span class="nav-dot dot-ccr" aria-hidden="true"></span>CCR</a></li>
+      <li><a href="research.html"><span class="nav-dot dot-research" aria-hidden="true"></span>Research</a></li>
+      <li><a href="millcity.html"><span class="nav-dot dot-millcity" aria-hidden="true"></span>Mill City</a></li>
+      <li><a href="bloomberg.html"><span class="nav-dot dot-bloomberg" aria-hidden="true"></span>Bloomberg</a></li>
+      <li><a href="kern.html"><span class="nav-dot dot-kern" aria-hidden="true"></span>KERN</a></li>
+      <li><a href="logixhealth.html"><span class="nav-dot dot-logixhealth" aria-hidden="true"></span>LogixHealth</a></li>
+      <li><a href="education.html"><span class="nav-dot dot-education" aria-hidden="true"></span>Education</a></li>
+      <li><a href="skills.html" aria-current="page"><span class="nav-dot dot-skills" aria-hidden="true"></span>Skills</a></li>
+      <li><a href="contact.html"><span class="nav-dot dot-contact" aria-hidden="true"></span>Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="ticker-bar" role="banner" aria-label="Role ticker">
+    <div class="ticker-inner">
+      <span class="ticker-text">TECHNICAL SKILLS &amp; CERTIFICATIONS — FINANCIAL MODELING · PYTHON · BLOOMBERG · SQL</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <header class="hero">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <div class="page-wrapper hero-content">
+        <span class="hero-label animate-in">Toolkit</span>
+        <h1 class="hero-title animate-in">Skills &amp;<br /><span class="accent">Certifications.</span></h1>
+        <p class="hero-thesis animate-in">
+          Financial modeling from three-statement to Monte Carlo. Python from scripting to OOP.
+          Bloomberg from navigation to API. The toolkit that runs across every other page on this site.
+        </p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="skills-panels">
+      <div class="page-wrapper">
+        <h2 class="sr-only" id="skills-panels">Skills and certifications</h2>
+        <div class="panels-grid">
+
+          <div class="glass-panel animate-in">
+            <span class="panel-label">Financial Modeling</span>
+            <h3 class="panel-title">Quant &amp; fundamental modeling toolkit</h3>
+
+            <div class="skill-group" aria-label="Financial modeling skills">
+              <div class="skill-list" role="list">
+                <span class="skill-chip" role="listitem">Three-Statement Modeling</span>
+                <span class="skill-chip" role="listitem">LBO Development</span>
+                <span class="skill-chip" role="listitem">DCF Analysis</span>
+                <span class="skill-chip" role="listitem">Pro-Forma Forecasting</span>
+                <span class="skill-chip" role="listitem">Sensitivity Analysis</span>
+                <span class="skill-chip" role="listitem">Monte Carlo Simulation</span>
+                <span class="skill-chip" role="listitem">Options Pricing</span>
+                <span class="skill-chip" role="listitem">Geometric Brownian Motion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-panel animate-in">
+            <span class="panel-label">Technical</span>
+            <h3 class="panel-title">Tools &amp; platforms</h3>
+
+            <div class="skill-group">
+              <span class="skill-group-label" aria-hidden="true">Software</span>
+              <div class="skill-list" role="list" aria-label="Software skills">
+                <span class="skill-chip" role="listitem">Excel (Advanced)</span>
+                <span class="skill-chip" role="listitem">Bloomberg Terminal</span>
+                <span class="skill-chip" role="listitem">LSEG Workspace</span>
+                <span class="skill-chip" role="listitem">SQL</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="skill-group-label" aria-hidden="true">Python</span>
+              <div class="skill-list" role="list" aria-label="Python skills">
+                <span class="skill-chip" role="listitem">pandas</span>
+                <span class="skill-chip" role="listitem">NumPy</span>
+                <span class="skill-chip" role="listitem">SciPy</span>
+                <span class="skill-chip" role="listitem">OOP</span>
+                <span class="skill-chip" role="listitem">Data Pipelines</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-panel animate-in" style="grid-column: 1 / -1;">
+            <span class="panel-label">Certifications</span>
+            <h3 class="panel-title">Verified credentials</h3>
+            <div class="certs-grid" role="list" aria-label="Certifications">
+
+              <div class="cert-card" role="listitem">
+                <span class="cert-name">Bloomberg Finance Fundamentals</span>
+                <span class="cert-issuer">Bloomberg</span>
+                <span class="cert-year">2025</span>
+              </div>
+
+              <div class="cert-card" role="listitem">
+                <span class="cert-name">Bloomberg Query Language (BQL)</span>
+                <span class="cert-issuer">Bloomberg</span>
+                <span class="cert-year">2025</span>
+              </div>
+
+              <div class="cert-card" role="listitem">
+                <span class="cert-name">Bloomberg Market Concepts (BMC)</span>
+                <span class="cert-issuer">Bloomberg</span>
+                <span class="cert-year">2025</span>
+              </div>
+
+              <div class="cert-card" role="listitem">
+                <span class="cert-name">Introduction to Python</span>
+                <span class="cert-issuer">DataCamp</span>
+                <span class="cert-year">2025</span>
+              </div>
+
+              <div class="cert-card" role="listitem">
+                <span class="cert-name">Intermediate Python</span>
+                <span class="cert-issuer">DataCamp</span>
+                <span class="cert-year">2025</span>
+              </div>
+
+              <div class="cert-card" role="listitem">
+                <span class="cert-name">Python OOP</span>
+                <span class="cert-issuer">DataCamp</span>
+                <span class="cert-year">2025</span>
+              </div>
+
+              <div class="cert-card" role="listitem">
+                <span class="cert-name">Data Science in Python</span>
+                <span class="cert-issuer">DataCamp</span>
+                <span class="cert-year">2025</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="glass-panel animate-in">
+            <span class="panel-label">Languages</span>
+            <h3 class="panel-title">Communication</h3>
+            <div class="lang-row" role="list" aria-label="Languages">
+              <div class="lang-item" role="listitem">
+                <span class="lang-name">English</span>
+                <span class="lang-level">Native</span>
+              </div>
+              <div class="lang-item" role="listitem">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-level">Fluent</span>
+              </div>
+              <div class="lang-item" role="listitem">
+                <span class="lang-name">Spanish</span>
+                <span class="lang-level">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="education.html" class="btn btn-ghost">&larr; Education</a>
+          <a href="contact.html" class="btn">Contact &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Hari Verma · Westford, MA</span>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="contact.html">Contact</a>
+        <a href="https://www.linkedin.com/in/hariverma" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

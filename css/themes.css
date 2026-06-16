@@ -1,0 +1,102 @@
+/* ============================================================
+   THEMES.CSS — per-page accent color blocks
+   Set <body data-theme="slug"> to activate.
+   Each block overrides the 4 accent custom properties only.
+   ============================================================ */
+
+/* ── home / contact  ── Ice White  #E8ECF1 ── */
+[data-theme="home"] {
+  --accent:        #E8ECF1;
+  --accent-dim:    rgba(232, 236, 241, 0.10);
+  --accent-glow:   rgba(232, 236, 241, 0.06);
+  --accent-border: rgba(232, 236, 241, 0.18);
+}
+
+/* ── rugby  ── Pitch Crimson  #C8102E ── */
+[data-theme="rugby"] {
+  --accent:        #C8102E;
+  --accent-dim:    rgba(200, 16, 46, 0.12);
+  --accent-glow:   rgba(200, 16, 46, 0.07);
+  --accent-border: rgba(200, 16, 46, 0.25);
+}
+
+/* ── research  ── Data Cyan  #2D9CFF ── */
+[data-theme="research"] {
+  --accent:        #2D9CFF;
+  --accent-dim:    rgba(45, 156, 255, 0.12);
+  --accent-glow:   rgba(45, 156, 255, 0.07);
+  --accent-border: rgba(45, 156, 255, 0.25);
+}
+
+/* ── millcity  ── Slate Steel  #5B6B7A ── */
+[data-theme="millcity"] {
+  --accent:        #8FA3B1;
+  --accent-dim:    rgba(143, 163, 177, 0.12);
+  --accent-glow:   rgba(143, 163, 177, 0.07);
+  --accent-border: rgba(143, 163, 177, 0.22);
+}
+
+/* ── bloomberg  ── Terminal Amber  #FFB000 ── */
+[data-theme="bloomberg"] {
+  --accent:        #FFB000;
+  --accent-dim:    rgba(255, 176, 0, 0.10);
+  --accent-glow:   rgba(255, 176, 0, 0.06);
+  --accent-border: rgba(255, 176, 0, 0.22);
+}
+
+/* ── kern  ── Founder Gold  #D4AF37 ── */
+[data-theme="kern"] {
+  --accent:        #D4AF37;
+  --accent-dim:    rgba(212, 175, 55, 0.10);
+  --accent-glow:   rgba(212, 175, 55, 0.06);
+  --accent-border: rgba(212, 175, 55, 0.22);
+}
+
+/* ── logixhealth  ── Clinical Teal  #2BA89A ── */
+[data-theme="logixhealth"] {
+  --accent:        #2BA89A;
+  --accent-dim:    rgba(43, 168, 154, 0.12);
+  --accent-glow:   rgba(43, 168, 154, 0.07);
+  --accent-border: rgba(43, 168, 154, 0.25);
+}
+
+/* ── ccr  ── Capital Emerald  #1E8F5E ── */
+[data-theme="ccr"] {
+  --accent:        #27AE74;
+  --accent-dim:    rgba(39, 174, 116, 0.12);
+  --accent-glow:   rgba(39, 174, 116, 0.07);
+  --accent-border: rgba(39, 174, 116, 0.25);
+}
+
+/* ── education  ── Oxford Bronze  #A87C4F ── */
+[data-theme="education"] {
+  --accent:        #C8965E;
+  --accent-dim:    rgba(200, 150, 94, 0.12);
+  --accent-glow:   rgba(200, 150, 94, 0.07);
+  --accent-border: rgba(200, 150, 94, 0.25);
+}
+
+/* ── skills  ── Indigo Violet  #6B5FD3 ── */
+[data-theme="skills"] {
+  --accent:        #8B7EE8;
+  --accent-dim:    rgba(139, 126, 232, 0.12);
+  --accent-glow:   rgba(139, 126, 232, 0.07);
+  --accent-border: rgba(139, 126, 232, 0.25);
+}
+
+/* ============================================================
+   NAV DOTS — each nav link carries a dot in the target page's
+   accent. These are static color values (not CSS variables)
+   because they need to show all colors simultaneously in nav.
+   ============================================================ */
+.dot-home        { background: #E8ECF1; }
+.dot-rugby       { background: #C8102E; }
+.dot-research    { background: #2D9CFF; }
+.dot-millcity    { background: #8FA3B1; }
+.dot-bloomberg   { background: #FFB000; }
+.dot-kern        { background: #D4AF37; }
+.dot-logixhealth { background: #2BA89A; }
+.dot-ccr         { background: #27AE74; }
+.dot-education   { background: #C8965E; }
+.dot-skills      { background: #8B7EE8; }
+.dot-contact     { background: #E8ECF1; }
