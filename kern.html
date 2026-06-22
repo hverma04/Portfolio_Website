@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KERN Financial — Hari Verma</title>
-  <meta name="description" content="Hari Verma — Co-Founder & CEO of KERN Financial LLC, offering quantitative investment strategy and FP&A services." />
+  <meta name="description" content="Hari Verma — Co-Founder & CEO of KERN Financial, a quantitative investment and consulting firm built around personalized strategy and maximizing client output." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/base.css" />
@@ -52,7 +52,7 @@
 
   <div class="ticker-bar" role="banner" aria-label="Role ticker">
     <div class="ticker-inner">
-      <span class="ticker-text">CO-FOUNDER &amp; CEO — KERN FINANCIAL LLC — DEC 2025–PRESENT</span>
+      <span class="ticker-text">CO-FOUNDER &amp; CEO — KERN FINANCIAL — DEC 2025–PRESENT</span>
     </div>
   </div>
 
@@ -61,10 +61,10 @@
     <header class="hero">
       <div class="hero-blob" aria-hidden="true"></div>
       <div class="page-wrapper hero-content">
-        <span class="hero-label animate-in">KERN Financial LLC · Founded Dec 2025</span>
+        <span class="hero-label animate-in">KERN Financial · Founded Dec 2025</span>
         <h1 class="hero-title animate-in">Co-Founder<br />&amp; <span class="accent">CEO.</span></h1>
         <p class="hero-thesis animate-in">
-          An LLC bringing institutional quant strategy to small businesses and retail investors. The flagship is MyQuant, a live options model running 10,000-iteration Monte Carlo.
+          A quant investment and consulting firm built around personalized strategy and maximizing client output. The flagship is MyQuant, a live options model running 10,000-iteration Monte Carlo.
         </p>
       </div>
     </header>
@@ -77,12 +77,12 @@
             <span class="stat-label">Monte Carlo Iterations</span>
           </div>
           <div class="stat-card">
-            <span class="stat-value">LLC</span>
-            <span class="stat-label">Registered Entity</span>
+            <span class="stat-value">3</span>
+            <span class="stat-label">Core Service Lines</span>
           </div>
           <div class="stat-card">
-            <span class="stat-value">GBM</span>
-            <span class="stat-label">Geometric Brownian Motion</span>
+            <span class="stat-value">1</span>
+            <span class="stat-label">Live Production Model</span>
           </div>
         </div>
       </div>
@@ -95,21 +95,41 @@
 
           <div class="glass-panel animate-in">
             <span class="panel-label">The Company</span>
-            <h3 class="panel-title">Quant strategy &amp; FP&amp;A for the underserved</h3>
+            <h3 class="panel-title">Quant investment and personalized consulting</h3>
             <ul class="panel-list">
-              <li>Built KERN to give small businesses and retail investors access to quant strategy usually reserved for institutions.</li>
-              <li>Services cover options strategy, volatility modeling, and FP&amp;A. No investment bank fees.</li>
+              <li>KERN Financial delivers quantitative investment strategy and personalized consulting to small businesses and retail investors.</li>
+              <li>Every engagement is tailored to the client's goals: options strategy, volatility modeling, FP&amp;A, or maximizing operational output.</li>
             </ul>
           </div>
 
           <div class="glass-panel animate-in">
-            <span class="panel-label">MyQuant</span>
+            <span class="panel-label">MyQuant Terminal</span>
             <h3 class="panel-title">Live options probability model</h3>
             <ul class="panel-list">
-              <li>MyQuant is a live options probability model built on Geometric Brownian Motion for price path simulation.</li>
-              <li>Runs 10,000 Monte Carlo iterations per query, generating probability distributions across strikes and expiry dates.</li>
+              <li>A live options model using Geometric Brownian Motion for price path simulation, running 10,000 Monte Carlo iterations per query.</li>
               <li>Outputs expected value, win probability, and tail-risk metrics from a Python backend on live market data.</li>
+              <li>Three-input decision engine: EV Score, IV vs. Fair Value, and Fear-Z regime. BUY signals in Systemic regimes are suppressed or size-adjusted via half-Kelly sizing.</li>
             </ul>
+            <a href="https://myquantterminal.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top: 1.5rem; display: inline-flex;">
+              Launch MyQuant ↗
+            </a>
+          </div>
+
+          <div class="glass-panel animate-in">
+            <span class="panel-label">Fear-Z Engine</span>
+            <h3 class="panel-title">Volatility regime classifier</h3>
+            <ul class="panel-list">
+              <li>Raw VIX is noisy and absolute. Fear-Z converts it into a z-score relative to a rolling historical window: VIXZ = (VIX_current − VIX_mean) / VIX_std.</li>
+              <li>Maps to three regimes: Episodic (short-term spike, fast decay), Structural (sustained elevation, medium decay), Systemic (crisis-level dislocation, slow decay).</li>
+              <li>The lambda decay parameter controls how long the fear signal persists — fast for episodic noise, slow for systemic crises where fear should weigh longer.</li>
+              <li>Acts as a gating mechanism in the BUY/HOLD/SELL engine, preventing high-EV signals from being acted on in the wrong risk environment.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">VIX Z-Score</span>
+              <span class="tag">Regime Classification</span>
+              <span class="tag">Lambda Decay</span>
+              <span class="tag">Kelly Criterion</span>
+            </div>
           </div>
 
           <div class="glass-panel animate-in">
